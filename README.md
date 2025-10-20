@@ -23,6 +23,8 @@ If you want to make a really huge print, [there is an alternative version](https
 
 If you want to create your own flexible model, make sure to check the **Hinge Design** section below.
 
+[A solid model conversion](https://github.com/Cenwulf/FlexiRex-Fusion) for AutoDesk Fusion has been made available by Cenwulf.
+
 
 ## Licensing
 
@@ -162,8 +164,10 @@ One of the nicest aspects about sharing 3D printable models, is seeing photos of
 ## Remarks
 
 * Notice to anyone buying prints of this model: it contains about 70 cents worth of material when printed in a premium filament. Add to this the costs of electricity and perhaps depreciation of printing infrastructure, and a bit of profit margin, and you might end up with about $2.50. Anyone who pays much more than that for a print, is being ripped off.
-* This model was designed using *Blender*, which is a mesh-based program. Mesh-based models cannot be generally converted into a volume-based representation as used by technical CAD programs, so please don't ask me for a STEP file or whatever other CAD format of this model, because there is none ([more info here](https://www.dr-lex.be/3d-printing/step-versus-mesh.html)). If you want to modify the model, the most sensible approach is to use a mesh-based editor.
-* The Blender source file is available (requires 3.2 or newer). The model is constructed using Boolean operators.
+* This model was designed using *Blender*, which is a mesh-based program. Mesh-based models cannot be generally converted into a volume-based representation as used by technical CAD programs ([more info here](https://www.dr-lex.be/3d-printing/step-versus-mesh.html)). If you want to modify the model, you have 2 options:
+  1. edit the mesh, using either the Blender model (see instructions below), or the raw STL;
+  2. use [CenWulf's AutoDesk model](https://github.com/Cenwulf/FlexiRex-Fusion), which has some adjustable parameters as well.
+* The Blender source `.blend` file is available (requires 3.2 or newer). The model is constructed using Boolean operators.
   - To ‘render’ the classic Rex, just apply all modifiers to each part.
   - To produce the ‘Flexier’ variant: in the Boolean modifiers of all ‘Shackle’ parts, replace the ‘Hole’ object by the ‘Slot’ object of the same number.
   - Even though the Blender model has been greatly improved in the latest edition by avoiding co-planar surfaces, the mesh will still not be 100% clean after applying the modifiers. To end up with a clean manifold mesh, it should suffice to select all vertices, then perform a ‘Merge by Distance,’ and then repeat ‘Degenerate Dissolve’ until it no longer removes anything.
